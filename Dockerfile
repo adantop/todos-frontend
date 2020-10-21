@@ -14,7 +14,7 @@ RUN mkdir /frontend
 
 COPY requirements.txt /frontend/requirements.txt
 COPY www /frontend/www
-COPY app.py /frontend/app.py
+COPY server.py /frontend/server.py
 
 RUN pip install -r /frontend/requirements.txt
 
@@ -22,4 +22,4 @@ WORKDIR /frontend
 
 EXPOSE 5000
 
-ENTRYPOINT [ "python3", "app.py" ]
+ENTRYPOINT [ "python3", "server.py" ]
