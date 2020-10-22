@@ -1,3 +1,4 @@
+// TODO enable persistence for data 
 import { todoService } from './offline.js'
 
 function loadTodos(todos) {
