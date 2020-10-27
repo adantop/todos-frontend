@@ -1,4 +1,4 @@
-import { todoService } from './offline.js'
+import { todoService } from './online.js'
 
 function loadTodos(todos) {
     const todosUl = document.getElementById('todos');
